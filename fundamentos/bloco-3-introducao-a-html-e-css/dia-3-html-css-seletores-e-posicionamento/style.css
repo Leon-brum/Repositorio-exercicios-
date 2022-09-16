@@ -9,3 +9,9 @@ font-size: 20px;
 background-color: rgb(197, 199, 196);
 
 }
+.p1{
+width: 80%;
+height: 100px;
+overflow: auto;
+
+}
