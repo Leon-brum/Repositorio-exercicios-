@@ -1,4 +1,4 @@
-let salarioBruto = 10000;
+let salarioBruto = 3682;
 let inss;
 let ir;
 let salarioLiquido;
