@@ -29,19 +29,43 @@
 
 //-----------------------------------------------------------//
 
-let leitor = {
-    nome: 'Julia',
-    sobrenome: 'Pessoa',
-    idade: 21,
-    livrosFavoritos: [
-      {
-        titulo: ['O Pior Dia de Todos',' Harry Potter e o Prisioneiro de Azkaban'],
-        autor: 'Daniela Kopsch',
-        editora: 'Tordesilhas',
-      },
-    ],
-  };
+// let leitor = {
+//     nome: 'Julia',
+//     sobrenome: 'Pessoa',
+//     idade: 21,
+//     livrosFavoritos: [
+//       {
+//         titulo: ['O Pior Dia de Todos',' Harry Potter e o Prisioneiro de Azkaban'],
+//         autor: 'Daniela Kopsch',
+//         editora: 'Tordesilhas',
+//       },
+//     ],
+//   };
 
 // console.log('O livro favorito de ' + leitor.nome + ' ' + leitor.sobrenome + ' se chama ' + leitor.livrosFavoritos[0].titulo);
 // console.log('O livro favorito de ' + leitor.nome + ' ' + leitor.sobrenome + ' se chama ' + leitor.livrosFavoritos[0].titulo);
-console.log(leitor.nome + ' tem ' + leitor.livrosFavoritos[0].titulo.length + ' livros favoritos');
+// console.log(leitor.nome + ' tem ' + leitor.livrosFavoritos[0].titulo.length + ' livros favoritos');
+
+//----------------------Function-------------------------//
+
+
+
+function palidromo (palavra){
+    palavra = '';
+    let reverso = -1;
+    let palavraRevertida = '';
+    let eUmPalidromo = true;
+    for (let index = 0; index < palavra; index += 1){
+        index += reverso;
+        palavraRevertida += palavra[index];
+    }
+    if (palavra === palavraRevertida){
+        return true;
+    } else {
+        return false;
+    }
+} 
+
+
+console.log(palavraRevertida);
+
