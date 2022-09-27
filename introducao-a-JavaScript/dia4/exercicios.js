@@ -50,22 +50,87 @@
 
 
 
-function palidromo (palavra){
-    palavra = '';
-    let reverso = -1;
-    let palavraRevertida = '';
-    let eUmPalidromo = true;
-    for (let index = 0; index < palavra; index += 1){
-        index += reverso;
-        palavraRevertida += palavra[index];
-    }
-    if (palavra === palavraRevertida){
-        return true;
-    } else {
-        return false;
-    }
-} 
+// function palidromo (palavra){
+//     let palavraInvertida = '';
+//     for (let index = 0; index < palavra.length; index += 1){
+//         palavraInvertida += palavra[palavra.length - 1 - index];
+//     }
+//     if (palavra === palavraInvertida){
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
 
 
-console.log(palavraRevertida);
+// console.log(palidromo('abacate'));
 
+//-----------------------Retorna maior numero inteiro------------------//
+
+// function numeroInteiro (array = []){
+//     let numeroAtual = 0;
+//     for (let index = 0; index < array.length; index += 1){
+//         if (numeroAtual <= array[index]){
+//            numeroAtual = array[index];
+//         } else {};
+//     }
+//     return numeroAtual;
+// }
+// console.log(numeroInteiro([500,200,700,105,56,900,80,60]));
+
+//-----------------------Retorna o menor numero inteiro----------------//
+
+// function numeroInteiro (array = []){
+//     let numeroAtual = array[0];
+//     for (let index = 0; index < array.length; index += 1){
+//         if (array[index] <= numeroAtual){
+//            numeroAtual = array[index];
+//         } else {};
+//     }
+//     return numeroAtual;
+// }
+// console.log(numeroInteiro([500,-50,700,105,56,900,80,60]));
+
+//--------------Retorna o maior quantidade de caracteres-------------//
+
+// function maiorPalavra (array = ['']){
+//     let palavraSelecionada = '';
+//     let aMaiorPalavra = '';
+//     for (let index = 0; index < array.length; index += 1){
+//         palavraSelecionada = array[index];
+//         if (aMaiorPalavra.length < palavraSelecionada.length){
+//             aMaiorPalavra = palavraSelecionada;
+//     }   else {}
+
+//     }
+//     return aMaiorPalavra;
+// }
+// console.log(maiorPalavra(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo','Joana']));
+
+//-----------------Retorna o numero que mais se repete-------------------------//
+
+// function maisRepetido(numeros) {
+//     let contRepetido = 0;
+//     let contNumero = 0;
+//     let indexNumeroRepetido = 0;
+
+//     for (let index in numeros) {
+//       let verificaNumero = numeros[index];
+//       for (let index2 in numeros) {
+//         if (verificaNumero === numeros[index2]) {
+//           contNumero += 1;
+//         }
+//       }
+//       if (contNumero > contRepetido) {
+//         contRepetido = contNumero;
+//         indexNumeroRepetido = index;
+//       }
+//       contNumero = 0;
+//     }
+
+//     return numeros[indexNumeroRepetido];
+//   }
+
+//   console.log(maisRepetido([2, 3, 2, 5, 8, 2, 3, 5, 5]));
+
+//------------------------retorna soma--------------------------//
